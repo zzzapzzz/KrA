@@ -38,7 +38,7 @@ sources=("document.getElementById" "document.getElementsByName" "document.getEle
 
 sinks=(src href data location code value action replace assig navigate getResponseHeader open showModalDialog eval evaluate execCommand execScript setTimeout setInterval "document.location" location "location.href" "document.write" ".innerHTML" "document.baseURI" "document.writeIn" innerHTML outerHTML "\.src" execScript "\.outerHTML" eval setTimeout setInterval newOutputStream createFile createTempFile "\.write" InputStreamReader "\.system" "\.exec" getParameter getParameterNames getParameterValues getParameterMap getQueryString getHeader getHeaders getHeaderNames getRequestURI getRequestURL getCookies getRequestedSessionId getInputStream getReader getMethod getProtocol getServerName getRemoteUser getUserPrincipal WHERE INSERT SELECT DELETE UPDATE ORDER createStatement executeQuery document.referrer window.name Function WebSocket websocket Messaging messaging Cookie LocalStorage SessionStorage request.getParameter escapeHtml searchParams "#"  URLSearchParams "location.hash" decodeURI eval Function setTimeout setInterval setImmediate execScript "crypto.generateCRMFRequest" "ScriptElement.src" "ScriptElement.text" "ScriptElement.textContent" "ScriptElement.innerText" "anyTag.onEventName" "document.write" "document.writeln" "anyElement.innerHTML" "Range.createContextualFragment" "window.location" "document.location" "if\s?" "eval\s?" "<%-" query YQL WHERE FROM SELECT UPDATE DELETE INSERT UNION getResults "navigator.geolocation.getCurrentPosition")
 
-worrior(){
+warrior(){
 	echo ""
 	echo "[!] Identifying sources with input sinks"
 	echo ""
@@ -64,12 +64,12 @@ worrior(){
 
 if [ $f != "-r" ]
 then
-	worrior
+	warrior
 else
 	for i in $(find $2 -type f -name "*.*")
 	do
 		echo "File: $i"
 		f=$i
-		worrior
+		warrior
 	done
 fi

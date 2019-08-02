@@ -24,7 +24,7 @@ Find Vulernabilities";
 echo -e "$red [$green-$red]$off$new File Manipulation | Command injection | XSS | Unserialize Function";
 echo -e "$red [$green-$red]$off$new Test Get, Post, Server | Cookies | SQL injection | Object injection";
 echo -e "$red [$green-$red]$off$new Header injection | Wordpress Functions | Sanitize Function | Dom";
-echo -e "$red [$green-$red]$off$new Header injection | Logic Fail | Communication and Storage Sinks";
+echo -e "$red [$green-$red]$off$new Logic Fail | Communication and Storage Sinks";
 echo -e ""
 echo -e "$red [$green+$red]1$off  Java";
 echo -e "$red [$green+$red]2$off  Java Directory Scan";

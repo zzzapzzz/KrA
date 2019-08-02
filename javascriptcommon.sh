@@ -42,7 +42,7 @@ fi
 sources=(GET POST REQUEST HEADER HEAD "SERVER" "SERVER\['PATH_" "SERVER\['REQUEST_U")
 sinks=("if\s?" "eval\s?" "<%-" query YQL WHERE FROM SELECT UPDATE DELETE INSERT UNION getResults navigator.geolocation.getCurrentPosition)
 
-xssam(){
+warrior(){
 	for i in ${sources[@]}
 	do
 		a=$(grep -in "\$_${i}" $f | grep -o "\$.*=" | sed "s/[ ]\?=//g" | sort -u)
@@ -61,12 +61,12 @@ xssam(){
 
 if [ $f != "-r" ]
 then
-	xssam
+	warrior
 else
 	for i in $(find $2 -type f -name "*.*")
 	do
 		echo "File: $i"
 		f=$i
-		xssam
+		warrior
 	done
 fi

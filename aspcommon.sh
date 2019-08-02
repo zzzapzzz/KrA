@@ -36,7 +36,7 @@ fi
 sources=(GET POST REQUEST HEADER "SERVER\['PHP" "SERVER\['PATH_" "SERVER\['REQUEST_U")
 sinks=(OpenTextFile WriteLine GetFileName CreateTextFile WScript\.Shell \.Exec \.run response\.write request\.querystring request\.form Response\\.Cookies Request\.Cookies Session ADODB\.recordset ADODB\.Connection ADODB\.command WHERE FROM SELECT UPDATE UNION DELETE INSERT if\s?)
 
-xssam(){
+warrior(){
 	for i in ${sources[@]}
 	do
 		a=$(grep -in "\$_${i}" $f | grep -o "\$.*=" | sed "s/[ ]\?=//g" | sort -u)
@@ -55,12 +55,12 @@ xssam(){
 
 if [ $f != "-r" ]
 then
-	xssam
+	warrior
 else
 	for i in $(find $2 -type f -name "*.*")
 	do
 		echo "File: $i"
 		f=$i
-		xssam
+		warrior
 	done
 fi

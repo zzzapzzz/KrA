@@ -37,7 +37,7 @@ fi
 sources=(GET POST REQUEST HEADER HEAD "SERVER" "SERVER\['PATH_" "SERVER\['REQUEST_U")
 sinks=(open close File readline write mkdir Dir _send_ __send__ system send public_send eval exec syscall __send__\s?\(? send\s?\( public_send\s?\ raw html_safe ^== ^!= params \.where \.having \.select \.group \.order \.limit \.offset \.joins \.includes \.lock \.readonly \.from params(.*)\.constantize)
 
-xssam(){
+warrior(){
 	for i in ${sources[@]}
 	do
 		a=$(grep -in "\$_${i}" $f | grep -o "\$.*=" | sed "s/[ ]\?=//g" | sort -u)
@@ -56,12 +56,12 @@ xssam(){
 
 if [ $f != "-r" ]
 then
-	xssam
+	warrior
 else
 	for i in $(find $2 -type f -name "*.*")
 	do
 		echo "File: $i"
 		f=$i
-		xssam
+		warrior
 	done
 fi
