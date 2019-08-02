@@ -34,8 +34,8 @@ echo -e "$red [$green+$red]5$off  PHP";
 echo -e "$red [$green+$red]6$off  PHP Directory Scan";
 echo -e "$red [$green+$red]7$off  ASP";
 echo -e "$red [$green+$red]8$off  ASP Directory Scan";
-echo -e "$red [$green+$red]7$off  Ruby";
-echo -e "$red [$green+$red]8$off  Ruby Directory Scan";
+echo -e "$red [$green+$red]9$off  Ruby";
+echo -e "$red [$green+$red]10$off  Ruby Directory Scan";
 echo -ne "$red [$green+$red] Option:$off: " ;
 read Option
 if [ $Option -eq "1" ]
@@ -105,14 +105,14 @@ read filepath
 fi
 
 
-if [ $Option -eq "6" ]
+if [ $Option -eq "8" ]
 then
 echo -ne "$red [$green+$red] Enter File Path$off: " ;
 read directory
     ./aspcommon.sh -r $directory
 fi
 
-if [ $Option -eq "8" ]
+if [ $Option -eq "9" ]
 then
 echo -ne "$red [$green+$red] Enter File Path$off: " ;
 read filepath
@@ -120,7 +120,7 @@ read filepath
 fi
 
 
-if [ $Option -eq "9" ]
+if [ $Option -eq "10" ]
 then
 echo -ne "$red [$green+$red] Enter File Path$off: " ;
 read directory
