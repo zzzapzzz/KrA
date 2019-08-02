@@ -56,7 +56,7 @@ echo -e "$red [$green!$red]$off If input go in sink then VULNERABLE";
 echo -e "$red [$green!$red]$off If not go in input then Not vulnerable";
 echo -ne "$red [$green+$red] Enter Directory Path$off: " ;
 read directory
-    ./javascriptcommon.sh -r $directory
+    ./javascommon.sh -r $directory
 fi
 
 
