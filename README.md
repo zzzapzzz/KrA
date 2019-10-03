@@ -18,14 +18,19 @@
     <img src="https://i.ibb.co/JvZfMSb/kra.png" width="600px"</img> 
 </div>
 
-# Working Example - Automatically Find Dom, Sinks and Executions
+# Working Example Java - Automatically Find Dom, Sinks and Executions
 <div align="center">
     <img src="https://i.ibb.co/6DBnhRk/java.png" width="600px"</img> 
 </div>
 
-# Working Example - Automatically Find Dom, Sinks and Executions
+# Working Example Javascript - Automatically Find Dom, Sinks and Executions
 <div align="center">
     <img src="https://i.ibb.co/YyZ21zN/java2.png" width="600px"</img> 
+</div>
+
+# Working Example PHP - Automatically Find bugs and SQL errors in parameters
+<div align="center">
+    <img src="https://i.ibb.co/s6PMLh7/php-sql.png" width="600px"</img> 
 </div>
 
 # Linux Installation
