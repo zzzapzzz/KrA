@@ -13,9 +13,14 @@
 # License
 - EULA
 
-# Screenshot
+# Interface
 <div align="center">
     <img src="https://i.ibb.co/JvZfMSb/kra.png" width="600px"</img> 
+</div>
+
+# Working Example - Automatically Find Dom, Sinks and Executions
+<div align="center">
+    <img src="https://i.ibb.co/6DBnhRk/java.png" width="600px"</img> 
 </div>
 
 # Linux Installation
